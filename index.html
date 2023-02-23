@@ -23,10 +23,6 @@
         <h1>Guohai Qu</h1>
         <p id="animmation">Front-end Developer!</p>
     </div>
-
-    <div class="mode">
-        <button class="circle" onclick="switchMode()"></button>
-    </div>
     <div class="projectLinks">
         <p class="cursor">Vue</p>
         <p class="cursor">VueX</p>
@@ -37,29 +33,5 @@
         <p class="cursor">Node</p>
     </div>
     <p class="button">CV</p>
-    <script>
-        let mode = 1 
-        function switchMode ()  {
-            if(mode === 1){
-                document.getElementsByTagName("body")[0].style.color ="white"
-                document.getElementsByTagName("body")[0].style.background ="black"
-                document.getElementsByClassName("mode")[0].style.border = "1px solid white"
-                document.getElementsByClassName("circle")[0].style.background = "white"
-                document.getElementsByClassName("circle")[0].style.marginTop = "40px"
-                document.getElementsByTagName("path")[0].style.fill = "#"
-                mode = 0
-            }else if (mode === 0){
-                mode = 1
-                document.getElementsByTagName("body")[0].style.color ="black"
-                document.getElementsByTagName("body")[0].style.background ="white"
-                document.getElementsByClassName("mode")[0].style.border = "1px solid black"
-                document.getElementsByClassName("circle")[0].style.background = "black"
-                document.getElementsByClassName("circle")[0].style.marginTop = "0px"
-                document.getElementsByTagName("path")[0].style.fill = "white"
-            }
-           
-
-        }
-    </script>
 </body>
 </html>
