@@ -1,0 +1,148 @@
+ body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-self:flex-start;
+  }
+
+  .colR{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+  }
+
+  #container {
+    width: auto;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: cneter;
+
+  }
+  .linkContent {
+    margin-left: 30px;
+  }
+
+  h1{
+    display: inline-block;
+    font-family: monospace;
+    font-weight: 100;
+    font-size: 30px;
+    margin: 0;
+  } 
+  p{
+    font-family: monospace;
+  }
+
+  .projectLinks{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: right;
+  }
+
+  .button {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    border: none;
+    background: none;
+    color: none;
+    border-radius: 5px;
+    padding: 4px;
+    margin-top: 12px;
+  }
+
+  #animmation {
+    display: inline-block;
+    font-family: monospace;
+    border-right: 4px solid;
+    font-weight: 400;
+    font-size: 13px;
+    width: 20ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(10), blinking 0.5s infinite step-end alternate;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+  
+  @keyframes blinking {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+
+  .lines {
+    position: relative;
+  }
+  .vergroup {
+    width:100%;
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 20px;
+    justify-content: space-around;
+  }
+
+  .horgroup {
+    height:100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    top: 20px;
+    justify-content: space-around;
+  }
+  .hor {
+    width: 100vw;
+    border: 1px solid lightgray;
+    background: none;
+  }
+  .ver {
+    height: 100vh;
+    border: 1px solid lightgray;
+    background: none;
+      }
+
+.mode {
+    width: 40px;
+    height: 80px;
+    border: 1px solid black;
+    border-radius:20px;
+    display: flex;
+    position: absolute;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border:none;
+    background-color: black;
+    position: relative;
+    margin-top:0px;
+    /* margin-top: 40px; */
+    bottom: 0;
+    left: 0;
+}
+
